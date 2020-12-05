@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aaronevan.binusezyfoody">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCwN-ptWOzO0ekbVEOQZ_u1lriCDS14voc" />
+        <activity android:name=".StoreActivity">
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyCwN-ptWOzO0ekbVEOQZ_u1lriCDS14voc" />
+        </activity>
+        <activity android:name=".activity.FinishActivity" />
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.DrinksActivity" />
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+</manifest>
