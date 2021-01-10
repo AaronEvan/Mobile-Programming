@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/myLoc"
+        android:icon="@drawable/placeholder"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="My Loc" />
+
+    <item
+        android:id="@+id/myorder"
+        android:icon="@drawable/cart"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        android:title="Your Cart" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/history"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="Your Cart" />
+</menu>

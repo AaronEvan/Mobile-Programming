@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.TopUpActivity">
+
+    <TextView
+        android:id="@+id/saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Balance :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none|numberSigned"
+        android:padding="0sp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/topupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:background="@drawable/shape_button"
+        android:layout_marginBottom="400sp"
+        android:layout_weight="1"
+        android:onClick="TopUpMoney"
+        android:paddingLeft="80sp"
+        android:paddingRight="80sp"
+        android:text="Top Up" />
+</LinearLayout>
